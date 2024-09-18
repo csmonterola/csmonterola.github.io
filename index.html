@@ -25,7 +25,7 @@
             align-items: center;
             padding: 50px 0;
             background-color: #4CAF50;
-            color: white;
+            color: rgb(255, 255, 255);
             border-radius: 10px;
         }
 
@@ -108,7 +108,57 @@
             margin: 0 10px;
         }
 
+        /* Style for the embedded media */
+        .media {
+            margin-top: 50px;
+            text-align: center;
+        }
 
+        .media h2 {
+            color: #4CAF50;
+        }
+
+        .media iframe,
+        .media audio {
+            margin: 20px auto;
+            display: block;
+        }
+
+        /* Contact form style */
+        .contact-form {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 1em;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        .contact-form textarea {
+            height: 100px;
+        }
     </style>
 </head>
 
@@ -149,6 +199,16 @@
             <p>"Sometimes, life doesn’t go as planned, but that’s the beauty of *c'est la vie*—it teaches us to embrace the unexpected and find strength in every twist of fate."</p>
         </section>
 
+        <div class="media">
+            <h2>My Favorite Music Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hsF4cjRZbS4?si=vo1l_RLMmOX02m_t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <h2>Listen to My Favorite Music</h2>
+            <audio controls>
+                <source src="music.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
         <section class="contact-info">
             <h2>Contact Me</h2>
             <p>You can reach me at <a href="mailto:johnlloydmonterola18@gmail.com">johnlloydmonterola18@gmail.com</a> or
@@ -158,10 +218,22 @@
 
         <div class="button-group">
             <a href="myfashionblog.html" target="_fashionblog">Visit My Fashion Blog</a>
-            <a href="Healthyrecipes.html" target="_healthyrecipes">Healthy Recipes</a>
+            <a href="Healthyrecipes.html" target="_healthyrecipe">Healthy Recipes</a>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Me via Gmail or GitHub</h2>
+            <form action="mailto:johnlloydmonterola18@gmail.com" method="post" enctype="text/plain">
+                <input type="email" name="email" placeholder="Enter your email" required><br>
+                <input type="password" name="password" placeholder="Enter your password" required><br>
+                <textarea name="message" placeholder="Your message" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
         </div>
     </div>
 </body>
+
+</html>
 
 </html>
 

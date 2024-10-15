@@ -1,167 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Lloyd Monterola | Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            padding: 50px 0;
-            background-color: #4CAF50;
-            color: rgb(255, 255, 255);
-            border-radius: 10px;
-        }
-
-        .profile-image {
-            flex: 0 0 150px;
-            margin-right: 40px;
-            margin-left: 50px;
-        }
-
-        .profile-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
-            border: 3px solid white;
-        }
-
-        .header-text {
-            flex: 1;
-            text-align: left;
-        }
-
-        .header-text h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        .header-text p {
-            font-size: 1.2em;
-        }
-
-        section {
-            margin: 20px 0;
-        }
-
-        h2 {
-            color: #4CAF50;
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 10px;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        .quote {
-            font-style: italic;
-            color: #555;
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        .contact-info {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .contact-info a {
-            color: #4CAF50;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        .button-group {
-            text-align: center;
-            margin: 50px 0;
-        }
-
-        .button-group a {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            transition: background-color 0.3s;
-            margin: 0 10px;
-        }
-
-        .media {
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        .media h2 {
-            color: #4CAF50;
-        }
-
-        .media iframe,
-        .media audio {
-            margin: 20px auto;
-            display: block;
-        }
-
-      
-        .contact-form {
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            padding: 10px;
-            margin: 10px 0;
-            font-size: 1em;
-            width: 80%;
-            max-width: 400px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .contact-form button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-            transition: background-color 0.3s;
-        }
-
-        .contact-form button:hover {
-            background-color: #45a049;
-        }
-
-        .contact-form textarea {
-            height: 100px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="dashboard">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#talents">Talents</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="toggle-dark-mode">Toggle Dark Mode</button></li>
+            </ul>
+        </nav>
+    </div>
+
     <div class="container">
         <header>
             <div class="profile-image">
@@ -173,7 +30,7 @@
             </div>
         </header>
 
-        <section>
+        <section id="about">
             <h2>About Me</h2>
             <p>Hi, I'm John Lloyd Monterola. I'm 20 years old and currently pursuing a Bachelor of Science in Computer
                 Science (BSCS) at the University of the Immaculate Conception. I have a deep passion for playing games,
@@ -184,7 +41,7 @@
                 taught me the value of perseverance and resilience.</p>
         </section>
 
-        <section>
+        <section id="talents">
             <h2>My Talents</h2>
             <ul>
                 <li>Playing the Guitar</li>
@@ -198,27 +55,30 @@
             <p>"Sometimes, life doesn’t go as planned, but that’s the beauty of *c'est la vie*—it teaches us to embrace the unexpected and find strength in every twist of fate."</p>
         </section>
 
-        <div class="media">
+        <div class="media" id="media">
             <h2>My Favorite Music Video</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/hsF4cjRZbS4?si=vo1l_RLMmOX02m_t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hsF4cjRZbS4?si=vo1l_RLMmOX02m_t"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
             <h2>Listen to My Favorite Music</h2>
             <audio controls>
                 <source src="music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
             </audio>
         </div>
 
-        <section class="contact-info">
+        <section class="contact-info" id="contact">
             <h2>Contact Me</h2>
             <p>You can reach me at <a href="mailto:johnlloydmonterola18@gmail.com">johnlloydmonterola18@gmail.com</a> or
-                follow me on <a href="https://www.facebook.com/johnlloyd.monterola?mibextid=ZbWKwL"
-                    target="_blank">Facebook</a>.</p>
+                follow me on <a href="https://www.facebook.com/johnlloyd.monterola?mibextid=ZbWKwL" target="_blank">Facebook</a>.</p>
         </section>
 
         <div class="button-group">
-            <a href="https://csmonterola.github.io/Projects/fashionblog/index.html">My fashionblog</a>
-              <a href="https://csmonterola.github.io/Projects/healthyrecipe/index.html">Healthy Recipe</a>
-            <a href="https://csmonterola.github.io/Projects/oliviawoodruff/oliviawoodruff.html">Oliviawoodruff</a>
+            <a href="https://csmonterola.github.io/Projects/fashionblog/index.html">My Fashion Blog</a>
+            <a href="https://csmonterola.github.io/Projects/healthyrecipe/index.html">Healthy Recipe</a>
+            <a href="https://csmonterola.github.io/Projects/oliviawoodruff/oliviawoodruff.html">Olivia Woodruff</a>
         </div>
 
         <div class="contact-form">
@@ -231,7 +91,14 @@
             </form>
         </div>
     </div>
+
+    <script>
+        const toggleButton = document.getElementById('toggle-dark-mode');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
-
 </html>
-

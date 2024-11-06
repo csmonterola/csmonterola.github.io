@@ -14,7 +14,7 @@
                 <li><a href="#talents">Talents</a></li>
                 <li><a href="#media">Media</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><button id="toggle-dark-mode">Toggle Dark Mode</button></li>
+                <li><button id="toggle-dark-mode"><span class="mode-icon">🌞</span> Toggle Dark Mode</button></li>
             </ul>
         </nav>
     </div>
@@ -92,13 +92,6 @@
         </div>
     </div>
 
-    <script>
-        const toggleButton = document.getElementById('toggle-dark-mode');
-        const body = document.body;
-
-        toggleButton.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

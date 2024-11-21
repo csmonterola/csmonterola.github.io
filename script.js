@@ -1,7 +1,5 @@
-const toggleButton = document.getElementById('toggle-dark-mode');
-const modeIcon = toggleButton.querySelector('.mode-icon');
+const toggleSwitch = document.getElementById('toggle-switch');
 
-toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    modeIcon.textContent = document.body.classList.contains('dark-mode') ? '🌜' : '🌞';
+toggleSwitch.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode', toggleSwitch.checked);
 });
